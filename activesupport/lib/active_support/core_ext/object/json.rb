@@ -53,7 +53,7 @@ class Object
     if respond_to?(:to_hash)
       to_hash.as_json(options)
     else
-      instance_values.as_json(options)
+      {}
     end
   end
 end
